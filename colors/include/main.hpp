@@ -1,0 +1,1 @@
+#include <pcl/common/colors.h>
