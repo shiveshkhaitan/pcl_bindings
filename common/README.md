@@ -16,6 +16,8 @@ Set the correct paths for the following in `make_bindings_via_cmake.py` and term
 
 Execute `/path/to/binder --root-module common --prefix cmake_bindings/ --bind "" --config common.config all_cmake_includes.hpp -- -std=c++14 -I include -I ${PCL_BUILD_INCLUDE} -I ${PCL_INCLUDE} -I ${EIGEN_INCLUDE} -DNDEBUG`
 
+(For some reason the above command needs to be run twice. Will fix this)
+
 Execute `./make_bindings_via_cmake.py`
 
 The bindings would be built inside `cmake_bindings`.
